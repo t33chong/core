@@ -112,7 +112,7 @@ class KeyboardRemote:
         self.watcher = aionotify.Watcher()
         self.watcher.watch(
             alias="devinput",
-            path=DEVINPUT,
+            path="/config/custom_components/keyboard_remote/input",
             flags=aionotify.Flags.CREATE
             | aionotify.Flags.ATTRIB
             | aionotify.Flags.DELETE,
